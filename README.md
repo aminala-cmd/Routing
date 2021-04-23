@@ -1,14 +1,22 @@
 # Routing
 This is a script that computes the routes for various offender locations to their corresponding incidence location. The script utilizes  OSMNx and NetworkX to compute distances between points
 
-#Running Locally
-Clone this repo https://github.com/aminala-cmd/Routing.git
-Install Python 3.x
-Create a Python3 Virtual Environment python3 -m venv <your_env_name>
-Activate the virtual environment source <your_env_name>/bin/activate
-Install osmnx pip install osmnx
-Install geopandas pip install geopandas
-Run the application e.g python3 kibera_route_finder.py
+# Scenario
+In order to acquire the possible routes between offender and incidence, you have to match an offender location to an incidence location. In this case, one offender can have many incidences committed. So, for each of the incidences committed by an offender, a route will be computed.
+
+# Configuration for localhost
+Clone this repo using
+git clone https://github.com/aminala-cmd/Routing.git
+Install requirements
+pip install -r requirements
+
+# Running the script
+Run the application using e.g python3 kibera_route_finder.py
+Change the name of the script depending on the area on interest i.e Kibera or Mathare
+
+# Outputs
+The outputs will be a GeoPackage data format for the computed routes between offender locations and incidence points.
+
 
 
 
